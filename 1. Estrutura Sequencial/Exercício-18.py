@@ -3,9 +3,9 @@
 tamanho = float(input("Tamanho do arquivo em Megabyte: "));
 velocidade = float(input("Velocidade de internet por Megabyte: "));
 
-tamanhoMb = tamanho * 1024;
-velocidadeMb = velocidade * 1024;
+tamanhoMb = int(tamanho * 1024);
+velocidadeMb = int(velocidade * 1024);
 tempo = tamanhoMb / velocidadeMb;
 minutos = tempo / 60;
 
-print("Tempo aproximado de download\n - Velocidade: %.0f MB\n - Minutos: %.2f min " %(velocidade, tempo));
+print("Tempo aproximado de download\n - Velocidade: %0f MB\n - Minutos: %.2f min " %(velocidade, tempo));
